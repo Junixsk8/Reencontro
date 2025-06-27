@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #3e2f00 url('https://i.imgur.com/y8f0wIO.gif') no-repeat center center fixed;
+  background-size: cover;
+  color: #f7e659;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(30, 25, 5, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 0 15px #f7e659aa;
+  position: relative;
+  z-index: 2;
+}
+
+h1, h2 {
+  color: #f7e659;
+  text-align: center;
+  text-shadow: 1px 1px 4px #000000bb;
+}
+
+p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f7e659;
+  font-weight: 600;
+  background-color: #5d4900;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #f7e659;
+  color: #3e2f00;
+}
+
+img, video {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px #f7e659bb;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #f7e659bb;
+  margin: 30px 0 10px 0;
+}
+
+a {
+  color: #f7e659;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estrelas */
+#estrelas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+#botao-reencontro {
+  display: inline-block;  /* Muda de block para inline-block para alinhamento à esquerda */
+  margin: 0;              /* Remove a margem automática */
+  text-align: center;
+  background-color: #5d4900;
+  color: #f7e659;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+#botao-reencontro:hover {
+  background-color: #f7e659;
+  color: #3e2f00;
+}
